@@ -1,0 +1,17 @@
+{
+  "author": "daniel.byrne@neotracker.io",
+  "license": "MIT",
+  "dependencies": {
+    "@neo-one/cli": "^2.6.0",
+    "@neo-one/client": "^2.6.0",
+    "@neo-one/smart-contract": "^2.5.0",
+    "@neo-one/smart-contract-test": "^2.5.0",
+    "@neo-one/smart-contract-typescript-plugin": "^2.5.0",
+    "@types/jest": "^25.2.1",
+    "jest": "26.0.0",
+    "ts-jest": "^25.5.1",
+    "source-map": "^0.7.3",
+    "synchronized-promise": "^0.3.1",
+    "typescript": "3.8.3"
+  }
+}
