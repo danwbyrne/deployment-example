@@ -5,7 +5,7 @@ import {
   ForwardedValue,
   LinkedSmartContract,
   MapStorage,
-  SmartContract,
+  SmartContract
 } from "@neo-one/smart-contract";
 import { Token } from "./Token";
 
@@ -16,7 +16,7 @@ export class Escrow extends SmartContract {
     codeVersion: "1.1",
     author: "sahmmie",
     email: "smarsatto@gmail.com",
-    description: "Escrow for TPN Coin",
+    description: "Escrow for NDC Coin",
   };
   private readonly balances = MapStorage.for<[Address, Address], Fixed<8>>();
 

@@ -8,7 +8,7 @@ import {
   Integer,
   LinkedSmartContract,
   receive,
-  SmartContract,
+  SmartContract
 } from "@neo-one/smart-contract";
 import { Token } from "./Token";
 
@@ -17,7 +17,7 @@ export class ICO extends SmartContract {
     codeVersion: "1.1",
     author: "sahmmie",
     email: "smarsatto@gmail.com",
-    description: "TPN ICO",
+    description: "NDC ICO",
   };
   public readonly amountPerNEO = 10;
   private mutableRemaining: Fixed<8> = 10_000_000_000_0000000;

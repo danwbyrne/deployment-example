@@ -6,7 +6,7 @@ import {
   Fixed,
   ForwardValue,
   MapStorage,
-  SmartContract,
+  SmartContract
 } from "@neo-one/smart-contract";
 
 const notifyTransfer = createEventNotifier<
@@ -47,8 +47,8 @@ export class Token extends SmartContract {
     email: "smarsatto@gmail.com",
     description: "TYPEEARN Token",
   };
-  public readonly name = "Tpn";
-  public readonly symbol = "TPN";
+  public readonly name = "Ndc";
+  public readonly symbol = "NDC";
   public readonly decimals = 8;
   private readonly balances = MapStorage.for<Address, Fixed<8>>();
   private readonly approvedTransfers = MapStorage.for<
