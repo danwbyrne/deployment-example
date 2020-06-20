@@ -68,7 +68,8 @@ export const createClient = <
     getUserAccountProviders = getUserAccountProvidersOrHost as any;
   }
 
-  const providers = [{ network: "priv", rpcURL: `http://localhost:9040/rpc` }];
+  const providers = [{network: "testnet",
+               rpcURL: "https://testnet.neotracker.io/rpc" }];
 
   const provider = new NEOONEProvider(providers);
   const userAccountProviders = getUserAccountProviders(provider);
@@ -87,9 +88,8 @@ export const createClient = <
     if (localKeyStore instanceof LocalKeyStore) {
       Promise.all([
         localKeyStore.addUserAccount({
-          network: "priv",
-          name: "master",
-          privateKey: "L4qhHtwbiAMu1nrSmsTP5a3dJbxA3SNS6oheKnKd8E7KTJyCLcUv",
+             network: 'local',
+        privateKey: 'L1j6QBfKNYwC4CyXfQnGxG2Midw48ghnprQRpcSYHDNqaCDcck7P'
         }),
       ]).catch(() => {
         // do nothing
