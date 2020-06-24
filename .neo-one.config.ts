@@ -23,7 +23,7 @@ const createUserAccountProviderFunc = (
         provider: new NEOONEProvider([{
             network,
             rpcURL
-        }]),
+        }])
     });
     console.log('i ran');
 
@@ -66,7 +66,7 @@ export default {
     testnet: { userAccountProvider: createUserAccountProviderFunc(
                 "testnet",
                 "https://testnet.neotracker.io/rpc"
-            ),}
+            )}
   },
   neotracker: {
     // NEO•ONE will start an instance of NEO tracker using this path for local data. This directory should not be committed.

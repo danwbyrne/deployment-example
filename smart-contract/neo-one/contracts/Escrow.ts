@@ -16,7 +16,7 @@ export class Escrow extends SmartContract {
     codeVersion: "1.1",
     author: "sahmmie",
     email: "smarsatto@gmail.com",
-    description: "Escrow for TPN Coin",
+    description: "Escrow for TPC Coin",
   };
   private readonly balances = MapStorage.for<[Address, Address], Fixed<8>>();
 

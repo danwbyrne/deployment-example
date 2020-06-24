@@ -42,13 +42,13 @@ interface TokenPayableContract {
 
 export class Token extends SmartContract {
   public readonly properties = {
-    codeVersion: "1.1",
+    codeVersion: "1.2",
     author: "sahmmie",
     email: "smarsatto@gmail.com",
     description: "TYPEEARN Token",
   };
-  public readonly name = "Tpn";
-  public readonly symbol = "TPN";
+  public readonly name = "Tpc";
+  public readonly symbol = "TPC";
   public readonly decimals = 8;
   private readonly balances = MapStorage.for<Address, Fixed<8>>();
   private readonly approvedTransfers = MapStorage.for<

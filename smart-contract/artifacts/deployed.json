@@ -1,0 +1,17 @@
+{
+  "escrow": {
+    "testnet": {
+      "address": "AZgyBYWhSNtsq9Cn2tkjesyA3NQtmTsFoC"
+    }
+  },
+  "ico": {
+    "testnet": {
+      "address": "ASV7tpSSs8tBGJBsScjadsgosg6PaP63TU"
+    }
+  },
+  "token": {
+    "testnet": {
+      "address": "AZ98EndSKMwnKnbXNipMDxy9tL7jwhdFvM"
+    }
+  }
+}

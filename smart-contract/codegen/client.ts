@@ -88,7 +88,7 @@ export const createClient = <
     if (localKeyStore instanceof LocalKeyStore) {
       Promise.all([
         localKeyStore.addUserAccount({
-             network: 'local',
+             network: 'testnet',
         privateKey: 'L1j6QBfKNYwC4CyXfQnGxG2Midw48ghnprQRpcSYHDNqaCDcck7P'
         }),
       ]).catch(() => {
