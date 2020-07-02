@@ -1,4 +1,4 @@
-/* @hash 86e5d251006ad514fd04df78923251ba */
+/* @hash 05125ee6717c7cb98b05f15d9675ebe5 */
 // tslint:disable
 /* eslint-disable */
 import { Client } from '@neo-one/client';
@@ -9,12 +9,6 @@ import { sourceMaps } from '../sourceMaps';
 const definition = {
   networks: {
     local: {
-      address: 'AXcQZewWPfc7o3WudtnV9LC2Tqguev3BFY',
-    },
-    priv: {
-      address: 'AYbZ5PRPKNaKqz4oGT8TMP5752NhssrE8n',
-    },
-    testnet: {
       address: 'AXcQZewWPfc7o3WudtnV9LC2Tqguev3BFY',
     },
   },
