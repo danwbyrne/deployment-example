@@ -11,6 +11,9 @@ const definition = {
     local: {
       address: 'AXcQZewWPfc7o3WudtnV9LC2Tqguev3BFY',
     },
+    testnet: {
+      address: 'ATsQmWH4MY3yRoP4GfGSuuqCs3k4H8MeVR'
+    }
   },
   abi: icoABI,
   sourceMaps,

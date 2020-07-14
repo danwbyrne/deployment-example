@@ -11,6 +11,9 @@ const definition = {
     local: {
       address: 'ANC3mB5QeZ1X3kwzRo6rTA5bApdHrMKaE5',
     },
+    testnet: {
+      address: 'AQndkQDDqgPh36B5aSBT2vApFp3mD4DHvU',
+    }
   },
   abi: escrowABI,
   sourceMaps,

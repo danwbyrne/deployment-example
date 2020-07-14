@@ -1,42 +1,4 @@
-import {
-  LocalKeyStore,
-  LocalMemoryStore,
-  LocalUserAccountProvider,
-  NEOONEProvider,
-  NetworkType
-} from "@neo-one/client-full";
-
-
-const createUserAccountProviderFunc = (
-    network:string,
-    rpcURL:string,
-) => async() => {
-    const keystore = new LocalKeyStore(new LocalMemoryStore());
-
-    switch (network) {
-      case 'testnet': {
-        await keystore.addUserAccount({
-            network: 'testnet',
-            privateKey: 'L1j6QBfKNYwC4CyXfQnGxG2Midw48ghnprQRpcSYHDNqaCDcck7P',
-            name:"master"
-        });
-      }
-      case 'priv': {
-        await keystore.addUserAccount({
-          network: "priv",
-          privateKey: "L4qhHtwbiAMu1nrSmsTP5a3dJbxA3SNS6oheKnKd8E7KTJyCLcUv",
-        })
-      }
-    }
-
-    return new LocalUserAccountProvider({
-        keystore,
-        provider: new NEOONEProvider([{
-            network,
-            rpcURL
-        }]),
-    });
-};
+import { getCustomNetworks } from './smart-contract/getCustomNetworks';
 
 export default {
   contracts: {
@@ -71,10 +33,7 @@ export default {
   },
   // NEO•ONE will configure various parts of the CLI that require network accounts using the value provided here, for example, when deploying contracts.
   // Refer to the documentation at https://neo-one.io/docs/configuration for more information.
-  networks: {
-    testnet: { userAccountProvider: createUserAccountProviderFunc("testnet","https://testnet.neotracker.io/rpc")},
-    priv: { userAccountProvider: createUserAccountProviderFunc("priv", "http://localhost:9040/rpc")}
-  },
+  networks: getCustomNetworks(),
   neotracker: {
     // NEO•ONE will start an instance of NEO tracker using this path for local data. This directory should not be committed.
     path: ".neo-one/neotracker",

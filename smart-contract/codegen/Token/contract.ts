@@ -11,6 +11,10 @@ const definition = {
     local: {
       address: 'AK4SJyPrqUKnDRdA5jarYP6yYhDH8G1k3t',
     },
+    testnet: {
+      address: 'ATzCFVAEa3kCa1HThY2ehxwKfuhNRwCU8J'
+    }
+
   },
   abi: tokenABI,
   sourceMaps,
